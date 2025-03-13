@@ -17,8 +17,7 @@ RUN apt-get update && \
 
 RUN python3 -m venv .venv && \
     sh .venv/bin/activate && \
-    pip install --no-cache-dir conan && \
-    conan profile detect --force
+    pip install --no-cache-dir conan
 
 WORKDIR /app
 COPY . .
