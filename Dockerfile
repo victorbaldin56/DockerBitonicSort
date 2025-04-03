@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y \
-        ocl-icd-opencl-dev \
+        pocl-opencl-icd \
         clinfo \
         clang \
         python3 \
